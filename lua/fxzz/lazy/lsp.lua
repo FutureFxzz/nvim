@@ -27,12 +27,14 @@ return {
             ensure_installed = {
                 "lua_ls",
                 "ts_ls",
-                "volar",
-                "cssls",
-                "html",
-                "intelephense",
+                -- "volar",
+                -- "cssls",
+                -- "html",
+                -- "intelephense",
                 "rust_analyzer",
-                "jdtls"
+                "jdtls",
+                "gopls",
+                "bashls"
             },
             handlers = {
                 function(server_name) -- default handler (optional)
