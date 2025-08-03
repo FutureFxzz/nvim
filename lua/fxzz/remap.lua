@@ -6,3 +6,6 @@ vim.api.nvim_set_keymap('n', '<F4>', [[:!g++ % -o %< && ./%<]] .. '<CR>', { nore
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+
+vim.api.nvim_create_user_command('W', 'w', {})
+vim.api.nvim_create_user_command('Q', 'q', {})
